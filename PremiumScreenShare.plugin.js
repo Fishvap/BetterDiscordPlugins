@@ -171,16 +171,16 @@ module.exports = (() => {
                 this.initialize();
             }
             loadSettings() {
-                this.fps15 = BdApi.loadData(config.info.name, "fps15") ?? 15;
-                this.fps30 = BdApi.loadData(config.info.name, "fps30") ?? 30;
-                this.fps60 = BdApi.loadData(config.info.name, "fps60") ?? 60;
+                this.fps15 = BdApi.loadData(config.info.name, "fps15") ?? 30;
+                this.fps30 = BdApi.loadData(config.info.name, "fps30") ?? 60;
+                this.fps60 = BdApi.loadData(config.info.name, "fps60") ?? 120;
                 this.res480p = BdApi.loadData(config.info.name, "res480p") ?? 480;
                 this.res720p = BdApi.loadData(config.info.name, "res720p") ?? 720;
                 this.res1080p = BdApi.loadData(config.info.name, "res1080p") ?? 1080;
                 this.smoothReso = BdApi.loadData(config.info.name, "smoothReso") ?? 1080;
-                this.smoothFPS = BdApi.loadData(config.info.name, "smoothFPS") ?? 60;
+                this.smoothFPS = BdApi.loadData(config.info.name, "smoothFPS") ?? 120;
                 this.betterReso = BdApi.loadData(config.info.name, "betterReso") ?? 0;
-                this.betterFPS = BdApi.loadData(config.info.name, "betterFPS") ?? 60;
+                this.betterFPS = BdApi.loadData(config.info.name, "betterFPS") ?? 144;
             }
             ascending(a, b) {
                 return a - b
